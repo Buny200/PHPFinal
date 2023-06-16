@@ -68,10 +68,42 @@ php artisan migrate:fresh --seed
 Este comando elimina todas las tablas de la base de datos y vuelve a crearlas antes de ejecutar los seeders.
 
 ## Estructura de directorios
+proyecto-php/
+├── app/
+│ ├── Controllers/
+│ ├── Models/
+│ └── ...
+├── config/
+├── database/
+│ ├── migrations/
+│ └── seeds/
+├── public/
+│ ├── index.php
+│ └── ...
+├── resources/
+│ ├── views/
+│ └── ...
+├── routes/
+│ └── web.php
+└── ...
 
-- `public`: Aquí se encuentra todo lo que el cliente puede ver.
+- `app/`: Aquí se encuentran los controladores, modelos y otros componentes principales de la aplicación.
+  - `Controllers/`: Contiene los controladores de la aplicación que manejan las solicitudes y respuestas HTTP.
+  - `Models/`: Contiene los modelos de datos que interactúan con la base de datos u otros servicios.
+  
+- `config/`: Contiene archivos de configuración para la aplicación, como la configuración de la base de datos, el correo electrónico, etc.
 
-- `database`: Contiene los archivos relacionados con la base de datos del proyecto.
+- `database/`: Aquí se almacenan las migraciones y los seeders relacionados con la base de datos de la aplicación.
+  - `migrations/`: Contiene archivos de migración que definen la estructura de la base de datos.
+  - `seeds/`: Contiene archivos de seeder que se utilizan para insertar datos de prueba en la base de datos.
 
-- `resources/views`: Aquí se encuentran todas las páginas web de la aplicación.
+- `public/`: Es el directorio raíz accesible públicamente. Aquí se encuentra el punto de entrada de la aplicación, generalmente el archivo `index.php`, y los archivos estáticos como CSS, JavaScript, imágenes, etc.
+
+- `resources/`: Contiene los recursos utilizados en la aplicación, como vistas, plantillas, archivos de idioma, etc.
+  - `views/`: Contiene las plantillas de vistas en formato de archivos PHP, que se utilizan para generar la interfaz de usuario.
+
+- `routes/`: Aquí se definen las rutas de la aplicación, es decir, las URL y los controladores asociados a ellas.
+  - `web.php`: Archivo de definición de rutas para las solicitudes web.
+
+
 
