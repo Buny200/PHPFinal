@@ -26,6 +26,9 @@ En Laravel, los componentes se encuentran en la carpeta `views/components`. Pued
 
 ## Vite
 Vite es una herramienta que nos ayuda a construir la parte del front-end de la aplicación web.
+## Tailwind
+
+Tailwind CSS es un framework de CSS de utilidad que se enfoca en brindar una gran flexibilidad y eficiencia al momento de construir interfaces de usuario.
 
 ## Comandos de Artisan
 
