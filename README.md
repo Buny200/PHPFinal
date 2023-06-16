@@ -68,24 +68,7 @@ php artisan migrate:fresh --seed
 Este comando elimina todas las tablas de la base de datos y vuelve a crearlas antes de ejecutar los seeders.
 
 ## Estructura de directorios
-proyecto-php/
-├── app/
-│ ├── Controllers/
-│ ├── Models/
-│ └── ...
-├── config/
-├── database/
-│ ├── migrations/
-│ └── seeds/
-├── public/
-│ ├── index.php
-│ └── ...
-├── resources/
-│ ├── views/
-│ └── ...
-├── routes/
-│ └── web.php
-└── ...
+
 
 - `app/`: Aquí se encuentran los controladores, modelos y otros componentes principales de la aplicación.
   - `Controllers/`: Contiene los controladores de la aplicación que manejan las solicitudes y respuestas HTTP.
