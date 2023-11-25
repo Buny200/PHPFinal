@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.cabecera{
+    @apply h-15v bg-red-600
+    flex flex-row justify-between p-4
+}
+
+.boton{
+    @apply border rounded-md
+    bg-red-200 hover:bg-red-600
+    text-2xl text-green-700 p-2
+}
